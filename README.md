@@ -30,7 +30,7 @@ This project allows users to perform basic arithmetic operations with a clean an
 
 ## 📸 Screenshot
 
-![React Calculator Screenshot](./screenshots/calculator.png)
+![React Calculator Screenshot](./screenshots/calculator.PNG)
 
 ---
 
