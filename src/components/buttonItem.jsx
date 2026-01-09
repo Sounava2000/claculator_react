@@ -8,7 +8,8 @@ export default function ButtonItem({
       if (buttonText === "Clear") setInputFieldText("");
       else if(buttonText === "Backspace")
         setInputFieldText(curr => {
-      // what is Error
+   
+          
             if(curr === "Error!")  
                 return "";
             else
@@ -18,7 +19,7 @@ export default function ButtonItem({
         const res = eval(inputFieldText);  
         console.log(res)
         if (isNaN(res)) setInputFieldText("Error!");
-          else setInputFieldText(res.toString());  // to string ta korbo keno
+          else setInputFieldText(res.toString());  
       } else {
         setInputFieldText((currText) => {
           if (currText === "Error!") return `${buttonText}`;
@@ -32,8 +33,8 @@ export default function ButtonItem({
   };
 
   return (
-    <button
-      className="px-3 py-4 bg-yellow-400 border border-black"
+  <button
+      className="px-3 py-4 bg-yellow-400 border border-black hover:bg-yellow-300 transition-colors"
       onClick={handleButtonClick}
     >
       {buttonText}
